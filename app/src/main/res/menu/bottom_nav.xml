@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action"
+        android:title="Action"
+        android:icon="@drawable/ic_baseline_call_to_action_24"/>
+
+    <item
+        android:id="@+id/track_response"
+        android:title="Response"
+        android:icon="@drawable/ic_baseline_track_changes_24"/>
+</menu>

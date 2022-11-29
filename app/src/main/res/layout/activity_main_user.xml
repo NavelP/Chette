@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.MainActivityUser"
+    android:background="@color/white">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/chette_frame_layout"
+        android:layout_above="@id/chette_bottom_nav">
+
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/chette_bottom_nav"
+        app:itemIconTint="@color/teal_700"
+        app:itemTextColor="@color/teal_700"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_nav"/>
+
+</RelativeLayout>

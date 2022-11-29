@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#ceccce"
+        android:padding="10dp"
+        android:text="Chette App"
+        android:textSize="20dp"
+        android:textStyle="bold" />-->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/action_page_frame_layout">
+
+    </FrameLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/plus"
+        android:layout_width="114dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        android:focusable="true"
+        android:tint="@color/white"
+        android:layout_height="158dp"
+        android:clickable="true"
+        app:srcCompat="@drawable/ic_baseline_add_24" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible"
+        android:layout_margin="10dp"
+        android:layout_above="@id/plus"
+        android:clickable="true"
+        app:srcCompat="@drawable/ic_baseline_call_24" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/camera"
+        android:layout_width="wrap_content"
+        android:layout_above="@id/call"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        app:srcCompat="@drawable/ic_baseline_camera_alt_24" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/sms"
+        android:layout_width="wrap_content"
+        android:layout_above="@id/camera"
+        android:visibility="invisible"
+        android:layout_alignParentEnd="true"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        app:srcCompat="@drawable/ic_baseline_textsms_24" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/constitution"
+        android:layout_width="wrap_content"
+        android:layout_above="@id/sms"
+        android:visibility="invisible"
+        android:layout_alignParentEnd="true"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        app:srcCompat="@drawable/ic_baseline_book_24" />
+
+
+</RelativeLayout>

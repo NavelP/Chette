@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="2dp"
+    android:layout_margin="5dp"
+    android:id="@+id/holderCard"
+    app:cardCornerRadius="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl"
+        android:background="#000000">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Department Name"
+            android:background="@color/teal_700"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:id="@+id/department_name"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/department_name"
+            android:id="@+id/text_complaint"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/chette_splash_screen_image"
+            android:scaleType="fitXY"
+            android:layout_below="@id/department_name"
+            android:id="@+id/image_complaint"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Image Caption"
+            android:textStyle="italic"
+            android:maxLines="2"
+            android:singleLine="true"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/rounded_border_blue"
+            android:layout_margin="5dp"
+            android:id="@+id/image_caption"
+            android:layout_below="@id/image_complaint"
+            android:padding="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_caption"
+            android:background="@color/cardview_light_background"
+            android:padding="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:id="@+id/boost_layout"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/boost_image"
+                    android:src="@drawable/ic_baseline_campaign_24"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:id="@+id/boostText"
+                    android:text="boost"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:gravity="center"
+                android:id="@+id/boost_num_layout"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/num_boots_image"
+                    android:src="@drawable/ic_baseline_ballot_24"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:id="@+id/num_boosts"
+                    android:text="No. Boosts"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

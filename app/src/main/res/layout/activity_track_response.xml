@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/response_tab_layout"
+        app:tabIndicatorColor="@color/deep_yellow"
+        app:tabTextColor="@color/white"
+        app:tabTextAppearance="@style/similar_modules_tab"
+        app:tabIconTint="@color/white"
+        app:tabSelectedTextColor="@color/deep_yellow"
+        android:background="@color/teal_700"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Department"
+        android:layout_marginStart="10dp"
+        android:textAllCaps="false"
+        android:id="@+id/track_response_select_department"
+        android:backgroundTint="@color/teal_700"
+        android:drawableEnd="@drawable/ccp_ic_arrow_drop_down"
+        android:layout_below="@id/response_tab_layout"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/track_response_select_department"
+        android:id="@+id/response_viewPager"/>
+
+</RelativeLayout>
